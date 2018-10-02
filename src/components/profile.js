@@ -1,10 +1,28 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-const ProfileComponent = () => {
+//hoc
+import Card from '../hoc/card';
+import Auth from '../hoc/auth';
+
+const ProfileComponent = (props) => {
+
+	 console.log('Props',props);
+
 	return(
-			<div>
-				ProfileComponent
-			</div>
+			<Auth>
+				<Card>
+					ProfileComponent<br/>
+					<p>Hello</p>
+					<NavLink 
+						to={`${props.match.url}/posts`}
+						style= {{color: 'green'}}>
+						Take me to here:- /profile/posts/
+					</NavLink>
+					<p>Hello</p>
+
+				</Card>
+			</Auth>
 		)
 }
 
