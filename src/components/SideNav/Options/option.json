@@ -1,0 +1,9 @@
+ getItems = () => {
+ 	items.map(item){
+ 		return(
+ 			<div >
+ 				
+ 			</div>
+ 		)
+ 	}
+ }
