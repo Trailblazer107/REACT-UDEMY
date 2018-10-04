@@ -1,10 +1,15 @@
 import React from 'react';
+import Layout from '../../hoc/layout/layout';
 
 const Home = (props) => {
   return (
-    <div>
-    	HomeComponent
-    </div>
+
+  	<Layout>
+  		<div>
+    		HomeComponent
+    	</div>
+  	</Layout>
+    
   )
 }
 
