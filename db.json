@@ -1,4 +1,31 @@
 {
+    "users":[
+      {
+        "id":1,
+        "email":"abc@gmail.com",
+        "first_name":"Akash",
+        "last_name":"Maniar",
+        "follower":"Phillies",
+        "password":123
+      },
+      {
+        "id":2,
+        "email":"abc@gmail.com",
+        "first_name":"Rushik",
+        "last_name":"Maniar",
+        "follower":"Phillies",
+        "password":123
+
+      },
+      {
+        "id":3,
+        "email":"abc@gmail.com",
+        "first_name":"Aayushi",
+        "last_name":"Maniar",
+        "follower":"Phillies",
+        "password":123
+      }
+    ],
     "articles":[
         {
             "id":1,
