@@ -43,9 +43,7 @@ class Board extends React.Component {
   }
 }
 
-class Game extends React.Component {
-  render() {
-    return (
+const Game = () => (
       <div className="game">
         <div className="game-board">
           <Board />
@@ -56,8 +54,8 @@ class Game extends React.Component {
         </div>
       </div>
     );
-  }
-}
+  
+
 
 // ========================================
 
