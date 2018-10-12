@@ -1,16 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import { render } from 'react-dom'
+import { createStore } from 'redux'
+import { Provider } from 'react-redux'
+import App from './components/App'
+import rootReducer from './reducers'
 
-const App = () => {
-  return(
-      <div>
-        Wellcome to toDoApp-redux app
-      </div>
-    )
-} 
+const store = createStore(rootReducer)
 
-ReactDOM.render(
-  <App />,
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
   document.getElementById('root')
-);
-
+)
