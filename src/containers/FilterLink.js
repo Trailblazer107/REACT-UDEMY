@@ -1,19 +1,12 @@
-import { connect } from 'react-redux'
-import { setVisibilityFilter } from '../actions'
-import Link from '../components/Link'
+activeStyle= { {
+      textDecoration: 'none',
+      color: 'black'
+    }}
 
-const mapStateToProps = (state, ownProps) => {
 
-  return {active: ownProps.footer_filter === state.visibilityFilter}
+import React from 'react'
+import 
+
+const FilterLink = () => {
+	
 }
-
-const mapDispatchToProps = (dispatch, ownProps) => {
-
-  return {onClick: () => dispatch(setVisibilityFilter(ownProps.footer_filter))}
-}
-
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Link)
